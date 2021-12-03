@@ -18,6 +18,7 @@ body{
     display: none;
     color: #323851;
 }
+/*styles header*/
 header{
     display: flex;
     align-items: center;
@@ -25,6 +26,9 @@ header{
     padding: 30px;
     height: 100%;
     width: 100%;
+}
+h1{
+    display: none;
 }
 header nav{
     width: 30%;
@@ -45,6 +49,7 @@ header nav ul li a{
 header nav ul li a:hover{
     opacity: 0.5;
 }
+/* Styles buttons */
 button.button-orange{
     background: #F3603B;
     width: 134px;
@@ -56,15 +61,37 @@ button.button-orange{
     border: none;
     cursor: pointer;
 }
+main div #button-white{
+    background-color: #FFFFFF;
+    width: 134px;
+    height: 44px;
+    color: #F3603B;;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 button.hover:hover{
     opacity: 0.5;
 }
+footer div.form form button.button-small{
+    width: 63px;
+    height: 42px;
+    background-color: #F3603B;
+    color: #FAFAFA;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+/* Styles main */
 main{
     background-image: url(../img/bg-body.svg);
     background-repeat: no-repeat;
     background-position-y: 950px;
     background-position-x: -450px ;
 }
+/* Styles section.home*/
 main section.home{
     display: flex;
     justify-content: space-around;
@@ -91,6 +118,7 @@ main section.home article p:nth-of-type(2){
     padding: 20px 40px 30px 0; 
     line-height: 26px;
 }
+/* Style section.about-us */
 main section.about-us{
     display: flex;
     justify-content: space-around;
@@ -150,6 +178,7 @@ main section.about-us article:nth-of-type(2) h3::before{
     padding: 10px 25px;
     margin-right: 20px;
 }
+/* Styles section.testimonials */
 main section.testimonials{
     display: flex;
     flex-direction: column;
@@ -183,6 +212,7 @@ main section.testimonials div article img{
     position: relative;
     bottom: 40px;
 }
+/* Styles div.frame */
 main div.frame{
     background-image: url(../img/bg-frame.svg);
     display: flex;
@@ -200,17 +230,7 @@ main div.frame p{
     width: 500px;
     line-height: 48px
 }
-main div #button-white{
-    background-color: #FFFFFF;
-    width: 134px;
-    height: 44px;
-    color: #F3603B;;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
+/* Styles footer */
 footer{
     background-color: #1E1E26;
     padding: 50px 0;
@@ -238,7 +258,6 @@ footer div.content div.form{
     align-items: center;
     justify-content: space-between;
     height: 100px;
-
 }
 footer div.content div.colum div.redes{
     display: flex;
@@ -252,7 +271,6 @@ footer div div.redes a i.icon{
 footer div div.redes a i.icon:hover{
     color: #F3603B;
 }
-
 footer nav ul{
     display: flex;
     flex-direction: column;
@@ -274,15 +292,6 @@ input[type="email"]{
     height: 40px;
     border: none;
     outline-color:  #F3603B;
-}
-footer div.form form button.button-small{
-    width: 63px;
-    height: 42px;
-    background-color: #F3603B;
-    color: #FAFAFA;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
 }
 footer div.copiright small{
     color: #8C8C94;
@@ -309,6 +318,7 @@ footer div.copiright{
     header{
         justify-content: space-between;
     }
+    /* Styles main */
     main{
         background-position-x: 240px;
         background-position-y: 400px;
@@ -411,6 +421,7 @@ footer div.copiright{
         margin-top: 25px;
         width: 100px;
     }
+    /* Styles footer */
     footer{
         height: 550px;
     }
@@ -438,5 +449,4 @@ footer div.copiright{
         margin-top: 80px;
         padding: 0 95px 0 90px;
     }
-
 }  
